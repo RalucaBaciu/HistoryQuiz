@@ -1,0 +1,405 @@
+﻿@using HistoryQuiz.Models
+@model IEnumerable<Question>
+
+
+@{
+    ViewBag.Title = "History Quiz";
+}
+
+<div class="container">
+    <div class="col-lg-12 qContainer" id="hideDiv">
+        <div class="col-lg-12 text-right timeLeft">Time left: <span id="timer"></span></div>
+
+        <div class="col-lg-12">
+            @foreach (var item in Model)
+            {
+                
+               
+                
+                    if (item.id == "0")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="1A" name="question1" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="1B" name="question1" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="1C" name="question1" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="1D" name="question1" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "1")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="2A" name="question2" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="2B" name="question2" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="2C" name="question2" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="2D" name="question2" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "2")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="3A" name="question3" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="3B" name="question3" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="3C" name="question3" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="3D" name="question3" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "3")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="4A" name="question4" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="4B" name="question4" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="4C" name="question4" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="4D" name="question4" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "4")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="5A" name="question5" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="5B" name="question5" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="5C" name="question5" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="5D" name="question5" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "5")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="6A" name="question6" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="6B" name="question6" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="6C" name="question6" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="6D" name="question6" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "6")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="7A" name="question7" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="7B" name="question7" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="7C" name="question7" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="7D" name="question7" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "7")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="8A" name="question8" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="8B" name="question8" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="8C" name="question8" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="8D" name="question8" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "8")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="9A" name="question9" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="9B" name="question9" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="9C" name="question9" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="9D" name="question9" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "9")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="10A" name="question10" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="10B" name="question10" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="10C" name="question10" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="10D" name="question10" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "10")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="11A" name="question11" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="11B" name="question11" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="11C" name="question11" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="11D" name="question11" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+
+                if (item.id == "11")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="12A" name="question12" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="12B" name="question12" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="12C" name="question12" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="12D" name="question12" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "12")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="13A" name="question13" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="13B" name="question13" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="13C" name="question13" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="13D" name="question13" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "13")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="14A" name="question14" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="14B" name="question14" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="14C" name="question14" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="14D" name="question14" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "14")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="15A" name="question15" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="15B" name="question15" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="15C" name="question15" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="15D" name="question15" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "15")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="16A" name="question16" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="16B" name="question16" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="16C" name="question16" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="16D" name="question16" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "16")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="17A" name="question17" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="17B" name="question17" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="17C" name="question17" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="17D" name="question17" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "17")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="18A" name="question18" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="18B" name="question18" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="18C" name="question18" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="18D" name="question18" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "18")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="19A" name="question19" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="19B" name="question19" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="19C" name="question19" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="19D" name="question19" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+                if (item.id == "19")
+                {
+                    <div class="col-lg-12 question">
+
+                         @Html.DisplayFor(q => item.question)
+
+                    </div>
+                    <div class="col-lg-12 options">
+
+                        <span><input id="20A" name="question20" type="radio" value="A" />A. </span>@Html.DisplayFor(q => item.answers[0])<br />
+                        <span><input id="20B" name="question20" type="radio" value="B" />B. </span>@Html.DisplayFor(q => item.answers[1]) <br />
+                        <span><input id="20C" name="question20" type="radio" value="C" />C. </span>@Html.DisplayFor(q => item.answers[2]) <br />
+                        <span><input id="20D" name="question20" type="radio" value="D" />D. </span>@Html.DisplayFor(q => item.answers[3]) <br />
+
+
+                    </div>
+                }
+            }
+          
+        </div>
+    </div>
+    <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center submitDiv">
+            <button class="btn submit" onclick="getScoreTimer()" id="hideB">Submit Test</button>
+
+
+        </div>
+        <div class="col-lg-12 result" id="displayResult">
+            <h2 class="resultTitle">Results</h2>
+            <div id="testResult">
+
+            </div>
+            <div class="col-lg-12">
+                <button class="btn start">@Html.ActionLink("Start Again", "StartQuiz")</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" onclick="getScore()">&times;</button>
+                    
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <h4>Time's up!</h4>
+                        Click submit to check your result.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="getScore()">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
