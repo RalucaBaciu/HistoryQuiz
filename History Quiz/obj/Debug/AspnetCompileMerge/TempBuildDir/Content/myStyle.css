@@ -1,0 +1,276 @@
+﻿
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(mtel-history-practice-study-guide_172249_large.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    font-family: 'Average', serif;
+    height:100vh;
+    position:relative;
+}
+.indexPage{
+   
+    
+    color:rgba(255,255,255,0.8);
+    height:80vh;
+    margin-top:5%;
+    
+    padding:30px;
+   
+    
+}
+.start{
+    
+    background:rgb(0, 153, 0); 
+    margin-top:50px;
+    margin-bottom:50px;
+    font-family:sans-serif;
+}
+.start a{
+    text-decoration:none;
+    color:white;
+}
+.start:hover{
+    background:rgb(0, 204, 0);
+}
+h2{
+   
+    font-family: 'Dancing Script', cursive;
+    color: #00cc44;
+    margin-bottom:40px;
+    margin-top:40px;
+    font-size:72px;
+   
+}
+h4{
+   
+    font-size:1.4em;
+}
+ul{
+    font-size:1.3em;
+    list-style-type:none;
+}
+.qContainer{
+    color:rgba(255,255,255,0.8);
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    height:350%;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding-bottom:80px;
+    padding-top:50px;
+}
+.question{
+    color:rgb(255, 255, 102);
+    font-size:1.5em;
+    margin:30px;
+}
+.options{
+    margin:30px;
+    font-size:1.3em;
+}
+.options input{
+    margin-right:20px;
+}
+
+.options span{
+    margin-right:10px;
+}
+
+
+.submit{
+    
+    background:rgb(0, 153, 0); 
+    color:white;
+     margin-bottom:50px;
+     font-family:sans-serif;
+}
+
+.submit:hover{
+    background:rgb(0, 204, 0);
+    color:white;
+    
+}
+
+div.col-lg-12.indexPage.result{
+    display:none;
+}
+
+.submitDiv{
+    top:-100px;
+}
+#testResult{
+    font-size:1.3em;
+}
+.instructions{
+    font-size:1.6em;
+    margin-bottom:20px;
+    padding-top:20px;
+    color:rgb(239, 229, 115);
+    font-family: 'Average', serif;
+}
+
+.instr {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: relative;
+    width: 100%;
+    height: 50%;
+    font-family: 'Average', serif;
+    font-size: 1.2em;
+   
+}
+.timeLeft {
+    padding:10px;
+    font-size:1.3em;
+    color:rgb(0, 204, 0);
+    border-color:rgba(255,255,255,0.5);
+    border-style:double;
+    border-radius:3px;
+    width:9%;
+    position:fixed;
+    left:74vw;
+    top:6vh;
+    
+}
+.resultTitle{
+     font-family: 'Average', serif;
+    color: #00cc44;
+    margin-bottom:40px;
+    margin-top:40px;
+    
+}
+.result{
+    color:rgba(255,255,255,0.8);
+    height:60%;
+    margin-top:30px;
+    padding:30px;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    
+    border-radius:3px;
+    border:1px solid rgba(255,255,255,0.7);
+    display:none;
+     font-family: 'Average', serif;
+     font-size:1.3em;
+}
+.modal-content {
+    position: relative;
+    background-color: #D0AF51;
+    color: black;
+    top: 30vh;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 9px rgba(255,255,255,0.5);
+    background-clip: padding-box;
+    font-size:1.2em;
+}
+.modal-header {
+    min-height: 16.428571429px;
+    padding: 15px;
+    border-bottom: none; 
+}
+.modal-footer {
+    padding: 19px 20px 20px;
+    margin-top: 15px;
+    text-align: right;
+    border-top: none;
+}
+.modal-footer {
+    padding: 19px 20px 20px;
+    margin-top: 15px;
+    text-align: center;
+    border-top: none;
+}
+p{
+    font-size:1.3em;
+}
+@media screen and (max-width: 1510px)
+{
+     .timeLeft{
+        width:10%;
+        left:75vw;
+    }
+}
+@media screen and (max-width: 1370px){
+ .timeLeft{
+        width:11%;
+        left:78vw;
+    }
+}
+@media screen and (max-width: 1199px){
+ .timeLeft{
+        width:12%;
+        left:74vw;
+    }
+}
+@media screen and (max-width: 1024px){
+     .timeLeft{
+        width:15%;
+        left:76vw;
+    }
+}
+@media screen and (max-width: 991px){
+    .timeLeft{
+        width:15%;
+        left:68vw;
+    }
+}
+@media screen and (max-width:768px){
+    .timeLeft{
+        width:20%;
+        left:73vw;
+        top:5vh;
+    }
+}
+@media screen and (max-width: 631px){
+    .timeLeft{
+        width:25%;
+        left:67vw;
+        top:5vh;
+    }
+}
+@media screen and (max-width: 480px) {
+    .timeLeft{
+        width:30%;
+        left:60vw;
+        top:5vh;
+
+    }
+}
+@media screen and (max-width: 360px){
+    
+    h2{
+        margin:0;
+    }
+    .timeLeft{
+        width:30%;
+        left:62vw;
+        top:9vh;
+        font-size:1.1em;
+        padding:5px;
+}
+    
+    .options{
+    margin:30px;
+    font-size:1.1em;
+    margin:0;
+    margin-bottom:20px;
+}
+    .question{
+        font-size:1.2em;
+        margin:0;
+        margin-top:10px;
+    }
+    div.container{
+        padding:5px;
+    }
+    .qContainer{
+        padding-top:70px;
+        
+    }
+}

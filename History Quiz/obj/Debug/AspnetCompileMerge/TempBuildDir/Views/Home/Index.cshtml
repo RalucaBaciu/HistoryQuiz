@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "History Quiz";
+}
+<div class="col-lg-12 indexPage">
+    <div class="col-lg-12 text-center">
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 text-center instr">
+            <h2>History Quiz</h2>
+            <div class="instructions">Instructions:</div>
+            <p class="text-center">
+
+                This quiz has a number of 20 questions.<br />
+                You have ony 10 minutes to answer all questions.<br />
+                For each correct question answered you get 1 point.<br /><br />
+                All the best!
+            </p>
+           <div class="btn start">
+            @Html.ActionLink("Start Quiz", "StartQuiz", new { @id = 0 })
+        </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    
+</div>
